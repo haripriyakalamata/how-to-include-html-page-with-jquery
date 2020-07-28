@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery load() Demo</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='style.css' rel='stylesheet' type='text/css'>
+<script>
+
+$(document).ready(function(){
+       $("#menu2").hide();
+     $( "#box" ).load( "home.html" );
+	
+	  
+    $("#home").click(function(){
+        $("#box").load("home.html");
+    });
+	 $("#about").click(function(){
+        $("#box").load("about.html");
+    });
+	$("#home1").click(function(){
+        $("#box").load("home.html");
+    });
+	 $("#about1").click(function(){
+        $("#box").load("about.html");
+    });
+
+ 
+});
+</script>
+</head>
+<body>
+
+   
+    <ul class='menu sidenav'>
+    <button id="all">All</button>    <button id="expiration"> Expiration</button>
+	
+	
+	<div id="menu1">
+    <li><a id="home">Home</a></li>
+    <li><a id="about">About</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+	</div>
+	
+	
+    <div id="menu2" >
+    <li><a id="home1">Home1</a></li>
+    <li><a id="about1">About1</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+	</div>
+	
+	
+    </ul>
+	
+    <div id="box">
+        
+    </div>
+    
+<script>
+$(document).ready(function(){
+ 
+  $("#all").click(function(){
+    $("#menu2").hide();
+	$("#menu1").show();
+  });
+  $("#expiration").click(function(){
+    $("#menu1").hide();
+	$("#menu2").show();
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.content{
+    width: 80%; 
+    height:150px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left:250px;		
+}
+
+/* Menu */
+.menu {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: darkturquoise;
+}
+
+
+.menu li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+.menu li a:hover {
+ background-color: lightskyblue;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: darkturquoise;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
